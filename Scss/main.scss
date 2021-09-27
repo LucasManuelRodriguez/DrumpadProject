@@ -1,0 +1,119 @@
+*{margin: 0;padding: 0;box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+.container{
+    background-color:darksalmon;
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+    .header_logo{
+        width: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        color: white;
+        h3{
+            font-size: 1.5rem;
+            span{
+                font-size: 2rem;
+            }
+        }
+        
+    }
+    .header_nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 65%;
+        margin-top: -4%;
+        justify-content: space-evenly;
+        button{
+            cursor: pointer;
+            background-color: darksalmon;
+            color: beige;
+            font-size: 1rem;
+            border: none;
+        }
+    }
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: space-around;
+    margin-top: 3%;
+    .main_cta{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-top: 2%;
+        .main_cta_title{
+            font-size: 3.5rem;
+        }
+        .main_cta_text{
+            margin-top: 5%;
+            margin-bottom: 10%;
+            font-size: 15px;
+            opacity: 0.3;
+        }
+        .main_cta_button{
+            width: 50%;
+            padding: 2%;
+            border-radius: 20px;
+            font-size: 1.3rem;
+            background-color:rgba(0,244,133) ;
+            color:white;
+            border: none;
+            cursor: pointer;
+            
+        }
+    }
+    .main_drumpad{
+        height: 100%;
+        width: 60%; 
+        .main_drumpad_img{
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 3px 50px rgba(255, 255, 255, 0.3));
+
+        }    
+    }
+}
+
+.CTA{
+    margin-top: 2%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    .CTA_text{
+        margin-top: 1%;
+        margin-bottom: 2%;
+        font-size: 17px;
+        opacity: 0.3;
+    }
+    .CTA_button{
+        cursor: pointer;
+        color:darksalmon;
+        background-color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 2%;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+}
