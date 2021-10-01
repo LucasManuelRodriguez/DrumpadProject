@@ -5,6 +5,10 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  background-color: darksalmon;
+}
+
 .container {
   background-color: darksalmon;
   width: 100%;
@@ -13,6 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 header {
@@ -81,7 +86,7 @@ main .main_cta .main_cta_button {
   padding: 2%;
   border-radius: 20px;
   font-size: 1.3rem;
-  background-color: #00f485;
+  background-color: #583a2f;
   color: white;
   border: none;
   cursor: pointer;
@@ -99,7 +104,7 @@ main .main_drumpad .main_drumpad_img {
 main .main_drumpad .main_drumpad_pad {
   width: 15%;
   height: 21%;
-  background-color: yellow;
+  background-color: #ffff0000;
   cursor: pointer;
   position: absolute;
   border: none;
@@ -152,7 +157,7 @@ main .main_drumpad .bombo {
 
 .CTA {
   margin-top: 2%;
-  height: 20vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,6 +178,159 @@ main .main_drumpad .bombo {
   padding: 2%;
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+/* for-phone-only */
+@media only screen and (max-width: 549px) and (orientation: portrait) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .header_logo {
+    width: 65%;
+    text-align: center;
+  }
+  header .header_logo h3 {
+    display: flex;
+    flex-direction: column;
+  }
+  header .header_nav {
+    display: none;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+  header .header_nav button {
+    margin-right: 1%;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+  }
+  main .main_drumpad {
+    width: 100%;
+  }
+  main .main_cta {
+    width: 100%;
+    align-items: center;
+  }
+  main .main_cta .main_cta_title {
+    width: 75%;
+    text-align: center;
+  }
+  main .main_cta .main_cta_button {
+    width: 65%;
+    padding: 3%;
+  }
+
+  .CTA {
+    margin-top: 10%;
+    width: 100%;
+  }
+  .CTA h2 {
+    width: 75%;
+    font-size: 25px;
+    text-align: center;
+  }
+  .CTA .CTA_text {
+    font-size: 15px;
+  }
+  .CTA .CTA_button {
+    padding: 3%;
+    width: 45%;
+  }
+}
+/* for-mobile-landscape*/
+@media only screen and (max-width: 899px) and (min-width: 550px) and (orientation: landscape) {
+  header {
+    width: 90%;
+  }
+  header .header_nav {
+    margin-top: -7%;
+  }
+
+  main {
+    width: 95%;
+  }
+  main .main_cta {
+    width: 35%;
+  }
+  main .main_cta .main_cta_title {
+    font-size: 2.5rem !important;
+  }
+  main .main_drumpad {
+    width: 55%;
+  }
+}
+/*for-tablet-portrait-up*/
+@media only screen and (max-width: 1024px) and (min-width: 750px) and (orientation: portrait) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  header .header_logo {
+    width: auto;
+  }
+  header .header_logo h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem !important;
+  }
+  header .header_logo h3 span {
+    font-size: 4rem !important;
+  }
+  header .header_nav {
+    display: none;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+  }
+  main .main_drumpad {
+    width: 100%;
+  }
+  main .main_cta {
+    width: 100%;
+    align-items: center;
+    margin-top: 5%;
+  }
+  main .main_cta .main_cta_title {
+    font-size: 5.5rem;
+  }
+  main .main_cta .main_cta_text {
+    font-size: 30px;
+  }
+  main .main_cta .main_cta_button {
+    padding: 3%;
+    width: 65%;
+    font-size: 2rem;
+    border-radius: 30px;
+  }
+
+  .CTA {
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+  }
+  .CTA h2 {
+    font-size: 3rem;
+    width: 55%;
+  }
+  .CTA p {
+    font-size: 30px;
+  }
+  .CTA .CTA_button {
+    padding: 3%;
+    width: 35%;
+    border-radius: 25px;
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

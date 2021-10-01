@@ -1,5 +1,7 @@
 *{margin: 0;padding: 0;box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-
+body{
+    background-color: darksalmon;
+}
 .container{
     background-color:darksalmon;
     width: 100%;
@@ -8,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: auto;
 }
 
 header{
@@ -74,7 +77,7 @@ main{
             padding: 2%;
             border-radius: 20px;
             font-size: 1.3rem;
-            background-color:rgba(0,244,133) ;
+            background-color:#583a2f ;
             color:white;
             border: none;
             cursor: pointer;
@@ -94,7 +97,7 @@ main{
         .main_drumpad_pad{
             width: 15%;
             height: 21%;
-            background-color:yellow;
+            background-color:#ffff0000;
             cursor: pointer;
             position: absolute;
             border: none;
@@ -149,7 +152,7 @@ main{
 
 .CTA{
     margin-top: 2%;
-    height: 20vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,3 +174,155 @@ main{
         font-weight: 600;
     }
 }
+
+ /* for-phone-only */
+ @media only screen and (max-width: 549px) and (orientation:portrait){
+     header{
+        flex-direction: column;
+        justify-content: center;
+        .header_logo{
+            width: 65%;
+            text-align: center;
+            h3{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .header_nav{
+            display: none;
+            margin: auto;
+            width: 100%;
+            justify-content: space-between;
+            button{
+                margin-right: 1%;
+            }
+        }
+    }
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 10%;
+        width: 100%;
+        .main_drumpad{
+            width: 100%;
+        }
+        .main_cta{
+            width: 100%;
+            align-items: center;
+            .main_cta_title{
+                width: 75%;
+                text-align: center;
+            }
+            .main_cta_button{
+                width: 65%;
+                padding: 3%;
+            }
+        }
+
+    }
+    .CTA{
+        margin-top: 10%;
+        width: 100%;
+        h2{
+            width: 75%;
+            font-size: 25px;
+            text-align: center;
+        }
+        .CTA_text{
+            font-size: 15px;
+        }
+        .CTA_button{
+            padding: 3%;
+            width: 45%;
+        }
+    }   
+ }
+  
+  /* for-mobile-landscape*/
+  @media only screen and (max-width:899px) and (min-width:550px) and (orientation: landscape){
+    header{
+          width: 90%;
+        .header_nav{
+            margin-top: -7%;
+        }
+        }
+    main{
+        width: 95%;
+        .main_cta{
+            width: 35%;
+            .main_cta_title{
+                font-size: 2.5rem !important;
+            }
+        }
+        .main_drumpad{
+            width: 55%;
+        }
+    }
+  }
+
+   /*for-tablet-portrait-up*/
+ @media only screen and (max-width: 1024px) and (min-width: 750px) and (orientation : portrait){
+    header{
+        flex-direction: column;
+        text-align: center;
+        .header_logo{
+            width: auto;
+            h3{
+                display: flex;
+                flex-direction: column;
+                font-size: 2.5rem !important;
+                span{
+                    font-size: 4rem !important;
+                }
+            }
+        }
+        .header_nav{
+            display: none;
+        }
+
+    }
+    main{
+        flex-direction: column-reverse;
+        margin-top: 10%;
+        align-items: center;
+        text-align: center;
+        .main_drumpad{
+            width: 100%;
+        }
+        .main_cta{
+            width: 100%;
+            align-items: center;
+            margin-top: 5%;
+            .main_cta_title{
+                font-size: 5.5rem;
+            }
+            .main_cta_text{
+                font-size: 30px;
+            }
+            .main_cta_button{
+                padding: 3%;
+                width: 65%;
+                font-size: 2rem;
+                border-radius: 30px;
+            }
+        }
+    }
+    .CTA{
+        margin-top: 5%;
+        width: 100%;
+        text-align: center;
+        h2{
+            font-size: 3rem;
+            width: 55%;
+        }
+        p{
+            font-size: 30px;
+        }
+        .CTA_button{
+            padding: 3%;
+            width: 35%;
+            border-radius: 25px;
+            font-size: 1.2rem;
+        }
+    }
+ }
