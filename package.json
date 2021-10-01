@@ -1,0 +1,22 @@
+{
+  "name": "drumpadproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasManuelRodriguez/DrumpadProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasManuelRodriguez/DrumpadProject/issues"
+  },
+  "homepage": "https://github.com/LucasManuelRodriguez/DrumpadProject#readme",
+  "dependencies": {
+    "firebase": "^9.1.1"
+  }
+}
