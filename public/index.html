@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1,maximum-scale=1" > 
+    <title>DomBOOM</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="shortcut icon" href="#">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="header_logo">
+                    <h3>Hit the <span>DOMBOOM</span></h3>
+                </div>
+                <nav class="header_nav">
+                    <button>Premium</button>
+                    <button>Help</button>
+                    <button>Download</button>
+                    <button>Sign Up</button>
+                    <button>Log In</button>
+                </nav>
+            </header>
+            <main>
+                <section class="main_cta">
+                    <h1 class="main_cta_title">Music for everyone.</h1>
+                    <p class="main_cta_text">Millions of songs. No credit card needed.</p>
+                    <button class="main_cta_button">Hit the</button>
+                </section>
+                <div id="section-drumpad" class="main_drumpad">
+                    <img class="main_drumpad_img" src="./images/drumkit.png" alt="Drumkit">
+                    <button   data-pad="hithat"  class="main_drumpad_pad hithat"></button>
+                    <button   data-pad="crash"  class="main_drumpad_pad crash"></button>
+                    <button   data-pad="tom1"  class="main_drumpad_pad tom1"></button>
+                    <button   data-pad="tom2"  class="main_drumpad_pad tom2"></button>
+                    <button   data-pad="tom3"  class="main_drumpad_pad tom3"></button>
+                    <button   data-pad="tom4"  class="main_drumpad_pad tom4"></button>
+                    <button   data-pad="redoblante"  class="main_drumpad_pad redoblante"></button>
+                    <button   data-pad="bombo"  class="main_drumpad_pad bombo"></button>
+                    <audio id="hithat" src="./sounds/hithat.wav"></audio>
+                    <audio id="crash" src="./sounds/crash.wav"></audio>
+                    <audio id="tom1" src="./sounds/tom1.wav"></audio>
+                    <audio id="tom2" src="./sounds/tom2.wav"></audio>
+                    <audio id="tom3" src="./sounds/tom3.wav"></audio>
+                    <audio id="tom4" src="./sounds/tom4.wav"></audio>
+                    <audio id="redoblante" src="./sounds/redoblante.wav"></audio>
+                    <audio id="bombo" src="./sounds/bombo.wav"></audio>
+
+                </div>
+            </main>
+            <section class="CTA">
+                <h2>Try Premium free for 1 mounths.</h2>
+                <p class="CTA_text">Play of songs ad-free, on-demand, and offline.</p>
+                <button class="CTA_button">SEE PRICING</button>
+            </section>
+        </div>
+    <script src="./js/main.js"></script>    
+    </body>
+</html>
